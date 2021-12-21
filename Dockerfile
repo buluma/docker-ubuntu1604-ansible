@@ -1,5 +1,6 @@
-FROM ubuntu:16.04
-LABEL maintainer="Shadow Walker"
+FROM buluma/ubuntu:16.04
+
+LABEL maintainer="Michael Buluma"
 
 ENV pip_packages "ansible pyopenssl"
 
