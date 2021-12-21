@@ -42,12 +42,12 @@ RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 # RUN cp /bin/true /sbin/agetty
 #
 # or:
-RUN ln -s /dev/null /etc/systemd/system/getty@tty1.service \
-    && ln -s /dev/null /etc/systemd/system/getty@tty2.service \
-    && ln -s /dev/null /etc/systemd/system/getty@tty3.service \
-    && ln -s /dev/null /etc/systemd/system/getty@tty4.service \
-    && ln -s /dev/null /etc/systemd/system/getty@tty5.service \
-    && ln -s /dev/null /etc/systemd/system/getty@tty6.service
+# RUN ln -s /dev/null /etc/systemd/system/getty@tty1.service \
+#     && ln -s /dev/null /etc/systemd/system/getty@tty2.service \
+#     && ln -s /dev/null /etc/systemd/system/getty@tty3.service \
+#     && ln -s /dev/null /etc/systemd/system/getty@tty4.service \
+#     && ln -s /dev/null /etc/systemd/system/getty@tty5.service \
+#     && ln -s /dev/null /etc/systemd/system/getty@tty6.service
 
 VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 CMD ["/lib/systemd/systemd"]
